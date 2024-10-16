@@ -1,0 +1,47 @@
+/* src/components/ProductCard.css */
+
+.product-card {
+    background-color: #f5f5dc; /* Cream color for a soft, luxurious feel */
+    border: 2px solid #b5651d; /* Warm brown border to add contrast */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  .product-info {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4e3d2; /* Light cream background for the info section */
+    color: #333; /* Darker text color for readability */
+  }
+  
+  .product-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    font-size: 1.2rem;
+    color: #b5651d; /* Matching the warm brown accent */
+    font-weight: bold;
+  }
+  

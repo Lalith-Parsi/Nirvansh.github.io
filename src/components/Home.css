@@ -1,0 +1,82 @@
+/* Home.css */
+
+.home {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .hero {
+    height: 80vh;
+    background: url('C:\Users\Lparsi\Desktop\MyWork\nirvansh-collections\public\images\bg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e67e22;
+  }
+  
+  .about {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .featured {
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .featured h2 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #333;
+  }
+  
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .featured-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .featured-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .featured-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .featured-item p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

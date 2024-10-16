@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
+/* src/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Main section */
+main {
+  padding: 50px;
+  background: url('C:\Users\Lparsi\Desktop\MyWork\nirvansh-collections\public\images\bg.png') no-repeat center center;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Heading for featured section */
+h2 {
+  text-align: center;
+  color: #ddcc30; /* Updated to gold-like color */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Cinzel', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Product grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Featured Jewelry Card Styles */
+.product-card {
+  background-color: #fafafa; /* Soft background color */
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  color: #2c3e50; /* Darker text color */
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  color: #e74c3c; /* Red color for price */
+  font-weight: bold;
 }

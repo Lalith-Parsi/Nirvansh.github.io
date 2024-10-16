@@ -1,0 +1,78 @@
+/* src/components/Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:wght@500&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(to right, #8e44ad, #2980b9, #f39c12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.logo h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f39c12;
+  transition: width 0.3s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
